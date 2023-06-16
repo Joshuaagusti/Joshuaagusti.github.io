@@ -23,7 +23,7 @@
               <div class="tranding-slide-img">
                 <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
               </div>
-              <div class="tranding-slide-content">
+              <div class="tranding-slide-content" id="slide1">
                 <h1 class="food-price">$18</h1>
                 <div class="tranding-slide-content-bottom">
                   <h2 class="food-name">
@@ -134,17 +134,20 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+ 
       
       
       
       <script>
       
       var TrandingSlider = new Swiper('.tranding-slider', {
+         
   effect: 'coverflow',
   grabCursor: true,
+          
+          
   centeredSlides: true,
-  loop: true,
+  loop: true    ,
   slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
@@ -153,6 +156,7 @@
     modifier: 2.5,
   },
   pagination: {
+     
     el: '.swiper-pagination',
     clickable: true,
   },
@@ -161,6 +165,30 @@
     prevEl: '.swiper-button-prev',
   }
 });
+   TrandingSlider.on('slideChange', function () {
+  var slides = document.querySelectorAll(".tranding-slide");
+       var content = document.querySelectorAll(".tranding-slide-content-bottom");
+  var activeIndex = TrandingSlider.activeIndex;
+
+  // Remove "active" class from all slides
+  content.forEach(function (cont) {
+    cont.classList.remove("active");
+  });
+
+
+  var originalIndex = getOriginalIndex(activeIndex, slides.length);
+  content[originalIndex].classList.add("active");
+});
+
+
+function getOriginalIndex(activeIndex, slidesLength) {
+  var originalIndex = activeIndex;
+  if (activeIndex < 0) {
+    originalIndex = (slidesLength + activeIndex) % slidesLength;
+  }
+  return originalIndex;
+}
+          
       
       
       

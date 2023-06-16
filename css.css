@@ -139,6 +139,7 @@ font-family: "Montserrat", monospace
 }
 
 .tranding-slide .tranding-slide-content {
+   transition: all 1s;
   position: absolute;
   left: 0;
   top: 0;
@@ -151,12 +152,33 @@ font-family: "Montserrat", monospace
   top: 2rem;
   right: 2rem;
   color: white;
-
+ text-shadow: 2px 1px 0 #000, 2px 1px 0 #000, 2px 1px 0 #000, 2px 1px 0 #000;
+animation: price 2s infinite ;
+    
+}
+@keyframes price{
+    0%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(10%);
+        
+    }
+    75%{
+       transform: translateY(-10%);
+    }
+    
+    
+    100%{
+       transform: translateY(0%);
+    }
+    
+    
     
 }
 
-.tranding-slide-content .tranding-slide-content-bottom {
-    opacity: 0%;
+ .tranding-slide-content-bottom {
+   opacity: 0%;
     transition: all 1s;
   position: absolute;
     width: 100%;
@@ -170,21 +192,12 @@ font-family: "Montserrat", monospace
 
 .tranding-slide-content .tranding-slide-content-bottom pre{
  position: relative;
-    bottom: -4rem;
+    bottom: 0rem;
     transition: all 1s;
 }
-.tranding-slide-content:hover .tranding-slide-content-bottom pre{
- position: relative;
-    bottom: 0rem;
-}
-.tranding-slide-content:hover .tranding-slide-content-bottom {
-opacity: 100%;
-}
 
-.food-rating {
-  padding-top: 1rem;
-  display: flex;
-  gap: 1rem;
+.active{
+    opacity: 100%;
 }
 
 .rating ion-icon {
@@ -267,5 +280,5 @@ opacity: 100%;
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-  background: black;
+  background: ;
 }
