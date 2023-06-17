@@ -190,14 +190,64 @@ animation: price 2s infinite ;
     background-size: 200%;
 }
 
-.tranding-slide-content .tranding-slide-content-bottom pre{
+.active pre{
  position: relative;
-    bottom: 0rem;
+    transform: translateY(0%);
     transition: all 1s;
 }
+pre{
+    transition: all 1s;
+      transform: translateY(50%);
+}
+#slide1 .tranding-slide-img img{
+     transform-style: preserve-3d;
+    position: relative;
+   transition: transform 0.5s;
 
+transform: rotateY(90deg);
+    
+}
 .active{
+  
+    
     opacity: 100%;
+}
+.tranding-slide .flipper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+
+.tranding-slide .front,
+.tranding-slide .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.tranding-slide .front {
+  transform: rotateY(0deg);
+}
+
+.tranding-slide .back {
+  transform: rotateY(180deg);
+}
+
+.tranding-slide .flipper .tranding-slide-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tranding-slide .flipper .tranding-slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .rating ion-icon {
