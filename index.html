@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fody Slider</title>
+    <title>Menu Werito</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css.css">
 
@@ -20,28 +20,38 @@
           <div class="swiper-wrapper">
             <!-- Slide-start -->
       <div class="swiper-slide tranding-slide">
-  <div class="flipper">
+  <div class="flipper tranding-slide-img">
     <div class="front">
-      <div class="tranding-slide-img">
+      <div >
         <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
       </div>
     </div>
     <div class="back">
-      <div class="tranding-slide-img">
+      <div >
         <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
       </div>
     </div>
   </div>
               <div class="tranding-slide-content">
-                <h1 class="food-price">$18</h1>
+                <h1 class="food-price">$16</h1>
                 <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
+                  <h2 class="food-name" >
                    Empanadas
                   </h2>
-                      <pre class="food-rating">
-         ⚪Pollo             ⚪Molida          ⚪Queso         
+                <div class="emp-info">
+                      <p class="food-rating">
+                    ⚪Pollo
                 
-                  </pre>
+                  </p>
+                       <p class="food-rating">
+                   ⚪Molida 
+                
+                  </p>
+                       <p class="food-rating">
+                  ⚪Queso 
+                
+                  </p>
+                    </div>
                 </div>
               </div>
             </div>
@@ -56,20 +66,27 @@
     </div>
     <div class="back">
       <div class="tranding-slide-img">
-        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+        <img src="imaghenes/comida/TN3BS47W6ZCILJIDTVRH62LDPQ.jpg" alt="Tranding">
       </div>
     </div>
   </div>
               <div class="tranding-slide-content">
-                <h1 class="food-price">$18</h1>
+                <h1 class="food-price">$16</h1>
                 <div class="tranding-slide-content-bottom">
                   <h2 class="food-name">
                   Panuchos
                   </h2>
-                       <pre class="food-rating">
-                       ⚪Pollo               ⚪Molida         
+                        <div class="info">
+                      <p class="food-rating">
+                    ⚪Pollo
                 
-                  </pre>
+                  </p>
+                       <p class="food-rating">
+                   ⚪Molida 
+                
+                  </p>
+                      
+                    </div>
                 </div>
               </div>
             </div>
@@ -80,15 +97,22 @@
                 <img src="imaghenes/comida/salbutes.jpg" alt="Tranding">
               </div>
               <div class="tranding-slide-content">
-                <h1 class="food-price">$18</h1>
+                <h1 class="food-price">$16</h1>
                 <div class="tranding-slide-content-bottom">
                   <h2 class="food-name">
                     Salbutes
                   </h2>
-                  <pre class="food-rating">
-                       ⚪Pollo               ⚪Molida         
+                  <div class="info">
+                      <p class="food-rating">
+                    ⚪Pollo
                 
-                  </pre>
+                  </p>
+                       <p class="food-rating">
+                   ⚪Molida 
+                
+                  </p>
+                      
+                    </div>
                 </div>
               </div>
             </div>
@@ -99,15 +123,22 @@
                 <img src="imaghenes/comida/tostadas.jpg" alt="Tranding">
               </div>
               <div class="tranding-slide-content">
-                <h1 class="food-price">$18</h1>
+                <h1 class="food-price">$16</h1>
                 <div class="tranding-slide-content-bottom">
                   <h2 class="food-name">
                 Tostadas
                   </h2>
-     <pre class="food-rating">
-                       ⚪Pollo               ⚪Molida        
+      <div class="info">
+                      <p class="food-rating">
+                    ⚪Pollo
                 
-                  </pre>
+                  </p>
+                       <p class="food-rating">
+                   ⚪Molida 
+                
+                  </p>
+                      
+                    </div>
                 </div>
               </div>
             </div>
@@ -118,14 +149,26 @@
                 <img src="imaghenes/comida/placeholder.png" alt="Tranding">
               </div>
               <div class="tranding-slide-content">
-                <h1 class="food-price">$55</h1>
+                <h1 class="food-price">$55-80</h1>
                 <div class="tranding-slide-content-bottom">
                   <h2 class="food-name">
                Caldos de pollo
                   </h2>
-                  <pre class="food-rating">
-                       ⚪Pollo               ⚪Molida         
-                  </pre>
+                   <div class="emp-info">
+                      <p class="food-rating">
+                    ⚪Pollo
+                
+                  </p>
+                       <p class="food-rating">
+                   ⚪Molida 
+                
+                  </p>
+                       <p class="food-rating">
+                  ⚪Queso 
+                
+                  </p>
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -165,7 +208,8 @@
           
           
   centeredSlides: true,
-  loop: true    ,
+  loop: false  ,
+           initialSlide: 2,
   slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
