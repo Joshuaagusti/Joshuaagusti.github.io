@@ -9,8 +9,110 @@
   list-style-type: none;
   text-decoration: none;
 }
+#tranding{
+    
+    
+    position: relative;
+    
+    
+    
+}
+#logo{
+       margin-top: 2em;
+}
 
+#ofrece{
+    margin-top: 2em;
+      font-family: "Poppins", sans-serif;
+    position: relative;
+    text-align: center;
+    z-index: 1000;
 
+ background: -webkit-linear-gradient(left,yellow,rgb(255, 159, 30));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    -webkit-background-size: 100%;
+    font-size: 220%;
+animation: gradient 1s infinite;
+    
+}
+#comida{
+    stroke-width:0.5px;
+}
+.icon{
+    
+    width: 2.6em;
+    height: 2.6em;
+    stroke: white;
+    fill: transparent;
+    stroke-width:0.7px;
+    stroke-miterlimit: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 400;
+    
+}
+#line{
+    
+    position: absolute;
+  bottom: 26%;
+    width: 20%;
+    height: 50%;
+    background-color:rgb(223, 113, 27);
+    z-index: 0;
+}
+#line2{
+   
+    position: absolute;
+   bottom: 26%;
+    left: 80%;
+    width: 20%;
+    height: 50%;
+    background-color: rgb(223, 113, 27);
+
+    z-index: 0;
+}
+.menu{
+    argin: 0;
+    display: flex;
+ 
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0 2.85em;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   
+}
+.menu-item:hover{
+      animation: strok 1.5s reverse;
+}
+.menu-item{
+    
+    
+    background: black;
+}
+@keyframes strok {
+
+    100% {
+
+        stroke-dashoffset: 400;
+
+    }
+
+}
+
+@keyframes gradient{
+ 0% {
+    -webkit-background-size: 100%;
+  }
+  50% {
+      -webkit-background-size: 190%;
+  }
+  100% {
+     -webkit-background-size: 100%;
+  }
+}
 
 html {
   font-size: 62.5%;
@@ -202,6 +304,7 @@ animation: price 2s infinite ;
 
     
   position: absolute;
+     z-index: 1000;
     width: 100%;
   bottom: 0rem;
   left: 0rem;
@@ -212,13 +315,13 @@ animation: price 2s infinite ;
 }
 
 
-#slide1 .tranding-slide-img img{
+.tranding-slide-img {
      transform-style: preserve-3d;
     position: relative;
    transition: transform 0.5s;
-
-transform: rotateY(90deg);
-    
+  perspective: 1000px;
+transform: rotateY(0deg);
+    z-index: 1;
 }
 .active{
   
@@ -230,9 +333,11 @@ transform: rotateY(90deg);
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+     z-index: 1;
   transition: transform 0.4s;
 }
 .flip {
+        
   transform: rotateY(180deg);
 }
 
