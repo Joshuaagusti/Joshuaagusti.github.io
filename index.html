@@ -8,248 +8,556 @@
     <title>Menu Werito</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css.css">
-      <link rel="icon" href="imaghenes/werito.png">
+    <link rel="icon" href="imaghenes/werito.png">
 
 </head>
 
 
 <body>
-    
-   
-      <div class="container">
-            <img src="imaghenes/LOGO.png" width="100%" id="logo">
-        </div>
-    
-     <h2 id="ofrece">Les Ofrece:
-    
-    <div id="line"></div>
-          
-    <div id="line2"></div>
-    </h2>
-     <menu class="menu">
-            <button class="menu-item" id="comida">
-            Comida
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon"><path d="M18 11v7a2 2 0 0 1-4 0v-5h-2V3a3 3 0 0 1 3-3h3v11zM4 10a2 2 0 0 1-2-2V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v7a2 2 0 0 1-2 2v8a2 2 0 0 1-4 0v-8z"/></svg>
+    <img src="imaghenes/logo_letras.png" id="logo">
+    <div id="page">
+
+        <h2 id="ofrece">Les Ofrece:
+
+            <div id="line"></div>
+
+            <div id="line2"></div>
+        </h2>
+        <menu class="menu">
+            <button class="menu-item" id="comida" onclick="changeSlider(1)" onClick>
+                <h3>Alimentos</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon">
+                    <path d="M18 11v7a2 2 0 0 1-4 0v-5h-2V3a3 3 0 0 1 3-3h3v11zM4 10a2 2 0 0 1-2-2V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v7a2 2 0 0 1-2 2v8a2 2 0 0 1-4 0v-8z" />
+                </svg>
             </button>
-         <button class="menu-item">
-           Bebidas
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon"> <path d="M17.5 7L16.3277 19.1914C16.2291 20.2171 15.3673 21 14.3369 21H9.66307C8.63265 21 7.77088 20.2171 7.67225 19.1914L6.5 7M12 7V3.5L15.5 2.5M5 7H19"</path> </svg>
-            
+            <button class="menu-item" onclick="changeSlider(2)">
+                <h3>Bebidas</h3>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                    <path d="M17.5 7L16.3277 19.1914C16.2291 20.2171 15.3673 21 14.3369 21H9.66307C8.63265 21 7.77088 20.2171 7.67225 19.1914L6.5 7M12 7V3.5L15.5 2.5M5 7H19" </path>
+                </svg>
+
             </button>
-        <button class="menu-item">
-          Postres
-            
+            <button class="menu-item" id="postre" onclick="changeSlider(3)">
+                <h3>Postres</h3>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                    <path d="M17.5 7L16.3277 19.1914C16.2291 20.2171 15.3673 21 14.3369 21H9.66307C8.63265 21 7.77088 20.2171 7.67225 19.1914L6.5 7M12 7V3.5L15.5 2.5M5 7H19" </path>
+                </svg>
+
             </button>
-        
-        
-    </menu>
-      
-    <section id="tranding">
-       
-        <div class="container">
-            <div class="swiper tranding-slider">
-                <div class="swiper-wrapper">
-                    <!-- Slide-start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="flipper tranding-slide-img">
-                            <div class="front">
-                                <div>
-                                    <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+
+
+        </menu>
+
+        <section id="tranding1">
+
+            <div class="container">
+                <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/info_back/infoempa.png" alt="Tranding">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="back">
-                                <div>
-                                    <img src="imaghenes/info_back/infoempa.png" alt="Tranding">
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Empanadas
+                                    </h2>
+                                    <div class="emp-info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Queso
+
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$16</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">
-                                    Empanadas
-                                </h2>
-                                <div class="emp-info">
-                                    <p class="food-rating">
-                                        ⚪Pollo
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/comida/panucho.jpeg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/comida/TN3BS47W6ZCILJIDTVRH62LDPQ.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Panuchos
+                                    </h2>
+                                    <div class="info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
 
-                                    </p>
-                                    <p class="food-rating">
-                                        ⚪Molida
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
 
-                                    </p>
-                                    <p class="food-rating">
-                                        ⚪Queso
+                                        </p>
 
-                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div>
+                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom active">
+                                    <h2 class="food-name">
+                                        Salbutes
+                                    </h2>
+                                    <div class="info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div>
+                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Tostadas
+                                    </h2>
+                                    <div class="info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div>
+                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$55-80</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Caldos de pollo
+                                    </h2>
+                                    <div class="emp-info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Queso
+
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Slide-end -->
-                    <!-- Slide-start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="flipper">
-                            <div class="front">
-                                <div class="tranding-slide-img">
-                                    <img src="imaghenes/comida/panucho.jpeg" alt="Tranding">
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="tranding-slide-img">
-                                    <img src="imaghenes/comida/TN3BS47W6ZCILJIDTVRH62LDPQ.jpg" alt="Tranding">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$16</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">
-                                    Panuchos
-                                </h2>
-                                <div class="info">
-                                    <p class="food-rating">
-                                        ⚪Pollo
 
-                                    </p>
-                                    <p class="food-rating">
-                                        ⚪Molida
 
-                                    </p>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide-end -->
-                    <!-- Slide-start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="flipper tranding-slide-img">
-                            <div class="front">
-                                <div>
-                                    <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div>
-                                    <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tranding-slide-content" >
-                            <h1 class="food-price">$16</h1>
-                            <div class="tranding-slide-content-bottom active">
-                                <h2 class="food-name">
-                                    Salbutes
-                                </h2>
-                                <div class="info">
-                                    <p class="food-rating">
-                                        ⚪Pollo
-
-                                    </p>
-                                    <p class="food-rating">
-                                        ⚪Molida
-
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide-end -->
-                    <!-- Slide-start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="flipper tranding-slide-img">
-                            <div class="front">
-                                <div>
-                                    <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div>
-                                    <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$16</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">
-                                    Tostadas
-                                </h2>
-                                <div class="info">
-                                    <p class="food-rating">
-                                        ⚪Pollo
-
-                                    </p>
-                                    <p class="food-rating">
-                                        ⚪Molida
-
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide-end -->
-                    <!-- Slide-start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="flipper tranding-slide-img">
-                            <div class="front">
-                                <div>
-                                    <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div>
-                                    <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$55-80</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">
-                                    Caldos de pollo
-                                </h2>
-                                <div class="emp-info">
-                                    <p class="food-rating">
-                                        ⚪Pollo
-
-                                    </p>
-                                    <p class="food-rating">
-                                        ⚪Molida
-
-                                    </p>
-                                    <p class="food-rating">
-                                        ⚪Queso
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <!-- Slide-end -->
 
 
+                <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
 
             </div>
 
-            <div class="tranding-slider-control">
-                <div class="swiper-button-prev slider-arrow">
-                    <ion-icon name="arrow-back-outline"></ion-icon>
+
+        </section>
+        <section id="tranding2">
+
+            <div class="container">
+                <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/info_back/infoempa.png" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Empanadas
+                                    </h2>
+                                    <div class="emp-info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Queso
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/comida/panucho.jpeg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/comida/TN3BS47W6ZCILJIDTVRH62LDPQ.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Panuchos
+                                    </h2>
+                                    <div class="info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div>
+                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom active">
+                                    <h2 class="food-name">
+                                        Salbutes
+                                    </h2>
+                                    <div class="info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div>
+                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Tostadas
+                                    </h2>
+                                    <div class="info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div>
+                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$55-80</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Caldos de pollo
+                                    </h2>
+                                    <div class="emp-info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Queso
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+
+
                 </div>
-                <div class="swiper-button-next slider-arrow">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
+
+
+                <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+
             </div>
 
-        </div>
 
-    </section>
+        </section>
+        <section id="tranding3">
 
+            <div class="container">
+                <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper tranding-slide-img">
+                                <div class="front">
+                                    <div>
+                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/info_back/infoempa.png" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Empanadas
+                                    </h2>
+                                    <div class="emp-info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Queso
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/comida/panucho.jpeg" alt="Tranding">
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="tranding-slide-img">
+                                        <img src="imaghenes/comida/TN3BS47W6ZCILJIDTVRH62LDPQ.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$16</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Panuchos
+                                    </h2>
+                                    <div class="info">
+                                        <p class="food-rating">
+                                            ⚪Pollo
+
+                                        </p>
+                                        <p class="food-rating">
+                                            ⚪Molida
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                       
+
+                <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -259,16 +567,42 @@
 
     <script>
         //Spaghetti :nerd:
-        var TrandingSlider = new Swiper('.tranding-slider', {
+        var slides1 = document.querySelectorAll("#tranding1 .tranding-slide");
+        var content1 = document.querySelectorAll("#tranding1 .tranding-slide-content-bottom");
+        var slides2 = document.querySelectorAll("#tranding2 .tranding-slide");
+        var content2 = document.querySelectorAll("#tranding2 .tranding-slide-content-bottom");
+        var slides3 = document.querySelectorAll("#tranding3 .tranding-slide");
+        var content3 = document.querySelectorAll("#tranding3 .tranding-slide-content-bottom");
+        var slidercomida = document.getElementById("tranding1");
+        var sliderbebida = document.getElementById("tranding2");
+        var sliderpostre = document.getElementById("tranding3");
+        var flipped1 = false;
+        var flipped2 = false;
+        var flipped3 = false;
 
-            effect: 'coverflow',
+        function changeSlider(slider) {
+            if (slider == 1) {
+                slidercomida.style.display = "";
+                sliderbebida.style.display = "none";
+                sliderpostre.style.display = "none";
+            } else if (slider == 2) {
+                slidercomida.style.display = "none";
+                sliderbebida.style.display = "";
+                sliderpostre.style.display = "none";
+            } else if (slider == 3) {
+                slidercomida.style.display = "none";
+                sliderbebida.style.display = "none";
+                sliderpostre.style.display = "";
+            }
+        }
+
+        var TrandingSlider1 = new Swiper("#tranding1 .tranding-slider", {
+            effect: "coverflow",
             grabCursor: true,
-
-
             centeredSlides: true,
             loop: false,
             initialSlide: 2,
-            slidesPerView: 'auto',
+            slidesPerView: "auto",
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
@@ -276,34 +610,90 @@
                 modifier: 2.5,
             },
             pagination: {
-
-                el: '.swiper-pagination',
+                el: ".swiper-pagination",
                 clickable: true,
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
-        var slides = document.querySelectorAll(".tranding-slide");
-
-
-        TrandingSlider.on('slideChange', function() {
-
-            var content = document.querySelectorAll(".tranding-slide-content-bottom");
-            var activeIndex = TrandingSlider.activeIndex;
-
-            // Remove "active" class from all slides
-            content.forEach(function(cont) {
-                cont.classList.remove("active");
-            });
-
-
-            var originalIndex = getOriginalIndex(activeIndex, slides.length);
-            content[originalIndex].classList.add("active");
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            on: {
+                slideChange: function() {
+                    var activeIndex = this.activeIndex;
+                    var originalIndex = getOriginalIndex(activeIndex, slides1.length);
+                    content1.forEach(function(cont) {
+                        cont.classList.remove("active");
+                    });
+                    content1[originalIndex].classList.add("active");
+                },
+            },
         });
 
-        var fliped = false;
+        var TrandingSlider2 = new Swiper("#tranding2 .tranding-slider", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: false,
+            initialSlide: 2,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            on: {
+                slideChange: function() {
+                    var activeIndex = this.activeIndex;
+                    var originalIndex = getOriginalIndex(activeIndex, slides2.length);
+                    content2.forEach(function(cont) {
+                        cont.classList.remove("active");
+                    });
+                    content2[originalIndex].classList.add("active");
+                },
+            },
+        });
+
+        var TrandingSlider3 = new Swiper("#tranding3 .tranding-slider", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: false,
+            initialSlide: 1,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            on: {
+                slideChange: function() {
+                    var activeIndex = this.activeIndex;
+                    var originalIndex = getOriginalIndex(activeIndex, slides3.length);
+                    content3.forEach(function(cont) {
+                        cont.classList.remove("active");
+                    });
+                    content3[originalIndex].classList.add("active");
+                },
+            },
+        });
 
         function getOriginalIndex(activeIndex, slidesLength) {
             var originalIndex = activeIndex;
@@ -312,24 +702,30 @@
             }
             return originalIndex;
         }
-        slides.forEach(function(slide) {
+
+        slides1.forEach(function(slide) {
             slide.addEventListener("click", function() {
-
                 var flipper = this.querySelector(".flipper");
+                var originalIndex = getOriginalIndex(TrandingSlider1.activeIndex, slides1.length);
 
-
-                if (fliped) {
-                    fliped = false;
+                if (flipped1) {
+                    flipped1 = false;
                     flipper.classList.remove("flip");
+                    content1[originalIndex].classList.add("active");
                 } else {
-                    fliped = true;
+                    content1.forEach(function(cont) {
+                        cont.classList.remove("active");
+                    });
+                    flipped1 = true;
                     flipper.classList.add("flip");
                 }
-
-
-
             });
         });
+
+      
+        slidercomida.style.display = "";
+        sliderbebida.style.display = "none";
+        sliderpostre.style.display = "none";
     </script>
 
 </body></html>
