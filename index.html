@@ -131,12 +131,12 @@
                             <div class="flipper tranding-slide-img">
                                 <div class="front">
                                     <div>
-                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                        <img src="imaghenes/comida/salbutes.jpg" alt="Tranding">
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div>
-                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                        <img src="imaghenes/info_back/infosal.png" alt="Tranding">
                                     </div>
                                 </div>
                             </div>
@@ -722,7 +722,44 @@
             });
         });
 
-      
+        slides2.forEach(function(slide) {
+            slide.addEventListener("click", function() {
+                var flipper = this.querySelector(".flipper");
+                var originalIndex = getOriginalIndex(TrandingSlider2.activeIndex, slides2.length);
+
+                if (flipped2) {
+                    flipped2 = false;
+                    flipper.classList.remove("flip");
+                    content2[originalIndex].classList.add("active");
+                } else {
+                    content2.forEach(function(cont) {
+                        cont.classList.remove("active");
+                    });
+                    flipped2 = true;
+                    flipper.classList.add("flip");
+                }
+            });
+        });
+
+        slides3.forEach(function(slide) {
+            slide.addEventListener("click", function() {
+                var flipper = this.querySelector(".flipper");
+                var originalIndex = getOriginalIndex(TrandingSlider3.activeIndex, slides3.length);
+
+                if (flipped3) {
+                    flipped3 = false;
+                    flipper.classList.remove("flip");
+                    content3[originalIndex].classList.add("active");
+                } else {
+                    content3.forEach(function(cont) {
+                        cont.classList.remove("active");
+                    });
+                    flipped3 = true;
+                    flipper.classList.add("flip");
+                }
+            });
+        });
+
         slidercomida.style.display = "";
         sliderbebida.style.display = "none";
         sliderpostre.style.display = "none";
