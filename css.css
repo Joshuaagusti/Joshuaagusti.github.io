@@ -75,33 +75,52 @@ color: darkorange;
     width: 20%;
     height: 50%;
     background-color: rgb(223, 113, 27);
-
+   
     z-index: 0;
+}
+.wrapper{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .menu {
     position: relative;
-transform: translateY(5vh);
+transform: translateY(6vh);
     margin-bottom: 10%;
     display: flex;
     font-size: 1.5em;
-    padding: 0 2.85em;
-
+width: 80%;
+    
     align-items: center;
     justify-content: center;
 
 }
+.menu button{
+  font-family: 'Montserrat', monospace;
 
+}
+.menu button:hover h3{
+  
+  font-size: 1.3em;
+
+}
+.menu button h3{
+  position: relative;
+transition: all 1s;
+
+}
 .menu-item:hover {
     animation: strok 1.5s reverse;
 }
 
 .menu-item {
-    color: aliceblue;
+
+   color:  white;;
     width: 100%;
     border: none;
     margin: none;
-    background: rgb(200, 162, 200);
+background: #FF8A00;
 }
 
 @keyframes strok {
@@ -176,11 +195,7 @@ body {
    
 }
 
-@keyframes page{
-    100%{
-        opacity: 100%;
-    }
-}
+
 
 #logo{
     width: 100%;
@@ -314,7 +329,7 @@ body {
     display: inline-block;
 
     margin: 0 2.3em;
-    /* Adjust the margin as per your preference */
+ 
 }
 
 @media (max-width:500px) {
@@ -350,11 +365,15 @@ body {
 
 .tranding-slide-content .food-price {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
-    color: white;
-    text-shadow: 2px 1px 0 #000, 2px 1px 0 #000, 2px 1px 0 #000, 2px 1px 0 #000;
+    color: darkorange;
+    text-align: center;
+   text-shadow: 2px 0 0 #fff, 0 -2px 0 #fff, 0 2px 0 #fff, -2px 0 0 #fff;
     animation: price 2s infinite;
+  font-family: 'Pacifico' , monospace;
+    font-size: 3rem
+;
 
 }
 
