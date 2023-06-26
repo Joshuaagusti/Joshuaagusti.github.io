@@ -34,22 +34,23 @@ color: darkorange;
 #comida {
     border-bottom-left-radius: 1em;
     border-top-left-radius: 1em;
+
 }
 
 #postre {
     border-bottom-right-radius: 1em;
     border-top-right-radius: 1em;
 
-
 }
 
 .icon {
 
+    position: relative;
     width: 2.6em;
     height: 2.6em;
     stroke: white;
     fill: transparent;
-    stroke-width: 0.7px;
+    stroke-width: 01px;
     stroke-miterlimit: 0;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -83,8 +84,13 @@ color: darkorange;
     align-content: center;
     justify-content: center;
 }
+.menu .menu-item h3{
+    position: relative;
+    z-index: 1000;
+}
 
 .menu {
+
     position: relative;
 transform: translateY(6vh);
     margin-bottom: 10%;
@@ -115,10 +121,12 @@ transition: all 1s;
 }
 
 .menu-item {
-
+    
+     border-color: antiquewhite;
+border-style: solid;
+transition: background 1s;
    color:  white;;
     width: 100%;
-    border: none;
     margin: none;
 background: #FF8A00;
 }
@@ -228,6 +236,18 @@ body {
 
 
 }
+#active-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red; /* Adjust the color as needed */
+  position: absolute;
+  bottom: 5px;
+  left: 50%; /* Initially centered */
+  transform: translateX(-50%); /* Center horizontally */
+  transition: left 0.3s ease-in-out; /* Add a transition effect */
+}
+
 
 #tranding {
     padding: 4rem 0;
