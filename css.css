@@ -32,6 +32,7 @@ color: darkorange;
 }
 
 #comida {
+       border-color: antiquewhite;
     border-bottom-left-radius: 1em;
     border-top-left-radius: 1em;
 
@@ -62,7 +63,7 @@ color: darkorange;
 
     position: absolute;
     bottom: 26%;
-    width: 20%;
+    width: 20vw;
     height: 50%;
     background-color: rgb(223, 113, 27);
     z-index: 0;
@@ -73,7 +74,7 @@ color: darkorange;
     position: absolute;
     bottom: 26%;
     left: 80%;
-    width: 20%;
+    width: 20vw;
     height: 50%;
     background-color: rgb(223, 113, 27);
    
@@ -125,7 +126,7 @@ transition: all 1s;
      border-color: antiquewhite;
 border-style: solid;
 transition: background 1s;
-   color:  white;;
+   color:  white;
     width: 100%;
     margin: none;
 background: #FF8A00;
@@ -297,12 +298,12 @@ body {
     display: inline-block;
 
     margin: 0 0.7em;
-    */
+    
 }
 
 .emp-info {
     position: relative;
-    transform: translateX(12%);
+    transform: translateX(10%);
     width: 100%;
     bottom: -2rem;
     opacity: 0%;
@@ -520,6 +521,36 @@ body {
         left: 99% !important;
         transform: translateX(-80%) !important;
     }
+    .emp-info p {
+    font-family: "Poppins", monospace;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+
+    margin: 0 0.2em;
+    
+}
+    #line {
+
+    position: absolute;
+    bottom: 26%;
+    width: 15vw;
+    height: 50%;
+    background-color: rgb(223, 113, 27);
+    z-index: 0;
+}
+
+#line2 {
+
+    position: absolute;
+    bottom: 26%;
+    left: 85%;
+    width: 15vw;
+    height: 50%;
+    background-color: rgb(223, 113, 27);
+   
+    z-index: 0;
+}
 }
 
 @media (max-width:990px) {
@@ -534,6 +565,7 @@ body {
         left: 0% !important;
         transform: translateX(-20%) !important;
     }
+    
 }
 
 @media (max-width: 767px) {
