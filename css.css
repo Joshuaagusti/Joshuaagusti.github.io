@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Pacifico&display=swap');
 *,
 *::before,
 *::after {
@@ -477,6 +478,22 @@ width: 50%;
 
     backface-visibility: hidden;
 
+}
+pre{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75em;
+ 
+    
+}
+pre a{
+  color: black;
+     text-shadow:
+      -1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white;
+    text-decoration: underline;
+    
 }
 .overlay {
   width: 40%;
