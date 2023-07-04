@@ -19,7 +19,7 @@
     </div>
     <div id="page">
 
-        <h2 id="ofrece">Les Ofrece:
+        <h2 class="ofrece">Les Ofrece:
 
             <div id="line"></div>
 
@@ -28,7 +28,7 @@
         <div class="wrapper">
         <menu class="menu">
           
-            <button class="menu-item" id="comida" onclick="changeSlider(1)">
+            <button class="menu-item" id="comida" onclick="changeSlider(1)" style="background-color: #804400;">
                 <h3>Antojitos</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon">
                     <path d="M18 11v7a2 2 0 0 1-4 0v-5h-2V3a3 3 0 0 1 3-3h3v11zM4 10a2 2 0 0 1-2-2V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v7a2 2 0 0 1-2 2v8a2 2 0 0 1-4 0v-8z" />
@@ -211,17 +211,17 @@
                             <div class="flipper tranding-slide-img">
                                 <div class="front">
                                     <div>
-                                        <img src="imaghenes/comida/EMPANADAS2.jpg" alt="Tranding">
+                                        <img src="imaghenes/comida/caldo.jpeg">
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div>
-                                        <img src="imaghenes/comida/panuchos.jpg" alt="Tranding">
+                                        <img src="imaghenes/info_back/CALDO.png" alt="Tranding">
                                     </div>
                                 </div>
                             </div>
                             <div class="tranding-slide-content">
-                                <h1 class="food-price">$55-80</h1>
+                                <h1 class="food-price">$45-80</h1>
                                 <div class="tranding-slide-content-bottom">
                                     <h2 class="food-name">
                                         Caldos de pollo
@@ -496,6 +496,11 @@
                 
             </div>
         </section>
+                <div class="wrapper">
+                    
+                    <p id="label">Bienvenido A Nuestro Establecimiento</p>
+                
+                </div>
 
     </div>
           <footer>
@@ -525,7 +530,7 @@
         var flipped1 = false;
        
    var menu = document.querySelectorAll(".menu-item");
-          menu[0].style.backgroundColor = "#FF8800";
+       
    function changeSlider(slider) {
            for(var i = 0;i<3;i++){
                menu[i].style.backgroundColor = "#FF8800";
@@ -680,7 +685,21 @@
             });
         });
 
-      
+       var sentences = ["Gracias Por Su Preferencia", "Vuelva Pronto", "Disfrute Su Estancia","Estamos Para Servirle","Le Deseamos Un Buen Dia"];
+    var currentIndex = 0;
+
+    function changeContent() {
+      var label = document.getElementById("label");
+      label.style.opacity = "0"; 
+
+      setTimeout(function() {
+        currentIndex = (currentIndex + 1) % sentences.length;
+        label.textContent = sentences[currentIndex];
+        label.style.opacity = "1"; 
+      }, 500); 
+    }
+
+    setInterval(changeContent, 5000);
      
 
         
